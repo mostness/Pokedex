@@ -60,10 +60,6 @@
                                     <constraint firstItem="Uw2-6G-M2s" firstAttribute="centerX" secondItem="IXa-uL-qRy" secondAttribute="centerX" id="tmL-7q-WJs"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" searchBarStyle="minimal" placeholder="Search Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="6d0-at-hIU">
-                                <rect key="frame" x="0.0" y="55" width="600" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Whu-LQ-sHk">
                                 <rect key="frame" x="20" y="120" width="560" height="460"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -114,6 +110,10 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" searchBarStyle="minimal" placeholder="Search Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="6d0-at-hIU">
+                                <rect key="frame" x="0.0" y="55" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -159,6 +159,7 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="Whu-LQ-sHk" id="ijS-hr-2EJ"/>
+                        <outlet property="searchBar" destination="6d0-at-hIU" id="ZCe-6N-QEn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
