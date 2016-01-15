@@ -17,6 +17,7 @@
 		882F49C11C473CCA007CCB6B /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882F49C01C473CCA007CCB6B /* PokeCell.swift */; };
 		882F49C31C48799A007CCB6B /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882F49C21C48799A007CCB6B /* csv.swift */; };
 		882F49C71C487D96007CCB6B /* PokemonSolid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 882F49C61C487D96007CCB6B /* PokemonSolid.ttf */; };
+		882F49C91C4880A4007CCB6B /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 882F49C81C4880A4007CCB6B /* music.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		882F49C01C473CCA007CCB6B /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 		882F49C21C48799A007CCB6B /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		882F49C61C487D96007CCB6B /* PokemonSolid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PokemonSolid.ttf; sourceTree = "<group>"; };
+		882F49C81C4880A4007CCB6B /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		882F49C51C487A83007CCB6B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				882F49C81C4880A4007CCB6B /* music.mp3 */,
 				882F49C61C487D96007CCB6B /* PokemonSolid.ttf */,
 				882F49B81C46818B007CCB6B /* pokemon.csv */,
 			);
@@ -180,6 +183,7 @@
 			files = (
 				882F49B11C44A384007CCB6B /* LaunchScreen.storyboard in Resources */,
 				882F49AE1C44A384007CCB6B /* Assets.xcassets in Resources */,
+				882F49C91C4880A4007CCB6B /* music.mp3 in Resources */,
 				882F49B91C46818B007CCB6B /* pokemon.csv in Resources */,
 				882F49C71C487D96007CCB6B /* PokemonSolid.ttf in Resources */,
 				882F49AC1C44A384007CCB6B /* Main.storyboard in Resources */,
