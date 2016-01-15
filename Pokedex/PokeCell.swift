@@ -27,6 +27,6 @@ class PokeCell: UICollectionViewCell {
         nameLbl.text = _pokemon.name.capitalizedString
         thumbImg.image = UIImage(named: "\(_pokemon.pokedexId)")
     }
-    
-    
+   
+
 }

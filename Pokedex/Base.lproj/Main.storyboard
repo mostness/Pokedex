@@ -160,15 +160,78 @@
                     <connections>
                         <outlet property="collection" destination="Whu-LQ-sHk" id="ijS-hr-2EJ"/>
                         <outlet property="searchBar" destination="6d0-at-hIU" id="ZCe-6N-QEn"/>
+                        <segue destination="4iB-cj-JCO" kind="show" identifier="PokemonDetailVC" id="xzn-5s-Hd2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="370" y="617"/>
         </scene>
+        <!--Pokemon DetailVC-->
+        <scene sceneID="52V-cm-A9g">
+            <objects>
+                <viewController id="4iB-cj-JCO" customClass="PokemonDetailVC" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vBA-GE-p5Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="qqV-fD-AGO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VCR-GW-8h8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FUM-zP-cOP">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Pokemon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBb-hY-pUF">
+                                        <rect key="frame" x="147" y="17" width="306" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="306" id="6UX-Er-Rzy"/>
+                                            <constraint firstAttribute="height" constant="21" id="oFw-F9-Tkt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIu-FQ-MsP">
+                                        <rect key="frame" x="8" y="9" width="57" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="Kej-W3-q4j"/>
+                                            <constraint firstAttribute="width" constant="57" id="hEs-jH-KHX"/>
+                                        </constraints>
+                                        <state key="normal" image="back"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.8980392157" green="0.1960784314" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="7H2-NU-nrQ"/>
+                                    <constraint firstItem="UBb-hY-pUF" firstAttribute="centerX" secondItem="FUM-zP-cOP" secondAttribute="centerX" id="Qif-2f-V4Z"/>
+                                    <constraint firstItem="UIu-FQ-MsP" firstAttribute="leading" secondItem="FUM-zP-cOP" secondAttribute="leading" constant="8" id="eul-nG-pdr"/>
+                                    <constraint firstItem="UBb-hY-pUF" firstAttribute="centerY" secondItem="FUM-zP-cOP" secondAttribute="centerY" id="g07-Ij-pLw"/>
+                                    <constraint firstAttribute="bottom" secondItem="UIu-FQ-MsP" secondAttribute="bottom" constant="8" id="haL-Uc-bMh"/>
+                                </constraints>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="J6g-92-lAE">
+                                <rect key="frame" x="20" y="63" width="560" height="29"/>
+                                <segments>
+                                    <segment title="Bio"/>
+                                    <segment title="Moves"/>
+                                </segments>
+                                <color key="tintColor" red="0.90588235289999997" green="0.1960784314" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="UBb-hY-pUF" id="mOI-BB-gRY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sRD-HC-90I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1120" y="516"/>
+        </scene>
     </scenes>
     <resources>
         <image name="105" width="120" height="120"/>
+        <image name="back" width="100" height="67"/>
         <image name="bg" width="1920" height="1200"/>
         <image name="sound_icon" width="413" height="413"/>
     </resources>
